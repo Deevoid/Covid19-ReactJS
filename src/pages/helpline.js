@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 export default function Blog() {
   return (
     <Layout>
-      <div>Hello this is the symptoms</div>
+      <div>Hello this is the Helpline</div>
     </Layout>
   );
 }

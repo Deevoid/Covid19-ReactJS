@@ -1,24 +1,18 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faVirus } from "@fortawesome/free-solid-svg-icons";
+
 import Navigation from "../components/navigation";
+import ThemeChanger from "../components/themeChanger";
+
 // import 'prismjs/themes/prism-okaidia.css';
 
 export default ({ children }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  );
   return (
     <div className="site-wrapper">
       <header className="site-header">
-        <div className="container site-container">
+        <div className="container site-header-container">
           <div className="site-title">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,9 +24,15 @@ export default ({ children }) => {
                 fill="#6F00FF"
               />
             </svg>
-            <Link to="/">{data.site.siteMetadata.title}</Link>
+            <Link to="/">
+              <FontAwesomeIcon icon={faVirus} fixedWidth pulse />
+              Covid19
+            </Link>
           </div>
-          <Navigation />
+          <div className="site-nav">
+            <Navigation />
+            <ThemeChanger />
+          </div>
         </div>
       </header>
       {children}

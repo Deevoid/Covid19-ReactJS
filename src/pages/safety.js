@@ -1,5 +1,10 @@
 import React from "react";
+import Layout from "../components/layout";
 
-export default function Safety() {
-  return <div>Hello this is safety.</div>;
+export default function Blog() {
+  return (
+    <Layout>
+      <div>Hello this is the safety</div>
+    </Layout>
+  );
 }

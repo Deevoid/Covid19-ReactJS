@@ -1,5 +1,10 @@
 import React from "react";
+import Layout from "../components/layout";
 
 export default function Blog() {
-  return <div>Hello this is the blog</div>;
+  return (
+    <Layout>
+      <div>Hello this is the blog</div>
+    </Layout>
+  );
 }

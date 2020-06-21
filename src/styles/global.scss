@@ -56,10 +56,12 @@ body.dark {
 }
 /* System Fonts as used by Medium and WordPress */
 body {
-  border-top: 1rem solid #6f00ff;
+  border-top: 3px solid #6f00ff;
   font-family: $font-family;
   background-color: var(--background);
   color: var(--text-color);
+  min-height: 100vh;
+  position: relative;
 }
 a {
   text-decoration: none;
@@ -72,30 +74,29 @@ a {
   margin: 0 auto;
 }
 .site-wrapper {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 .site-header {
   margin: 0;
   padding: 0;
-  .site-container {
+  .site-header-container {
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
   }
   .site-title {
     position: relative;
-    padding: 1rem 1rem 0 1rem;
-    width: 7rem;
+    padding: 16px 16px 0 16px;
+    width: 100px;
+    min-width: 100px;
     text-align: center;
-    svg {
+    > svg {
       position: absolute;
       top: 0;
       left: 0;
       z-index: -1;
-      width: "286";
-      height: "96";
     }
     a {
       font-weight: 550;
@@ -103,26 +104,36 @@ a {
       color: var(--primary-text-color);
     }
   }
-}
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
 
-.navigation {
-  padding: 1rem 1rem 0 1rem;
-  display: flex;
-  align-items: center;
-  font-weight: 300;
-  a {
-    color: #888;
-    text-decoration: none;
-    margin: 0 8px 0;
-    &[aria-current] {
-      color: var(--primary-color);
-      font-weight: 700;
+    .navigation {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      a {
+        color: #888;
+        text-decoration: none;
+        margin: 0 12px 0;
+        transition: 200ms;
+        &[aria-current] {
+          color: var(--primary-color);
+          font-weight: 600;
+        }
+        &:hover {
+          color: var(--primary-color);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
-    &:hover {
-      color: var(--primary-color);
-    }
-    &:last-child {
-      margin-right: 0;
+    label {
+      padding-top: 2px;
+      cursor: pointer;
     }
   }
 }
@@ -328,13 +339,14 @@ body.light {
 .mode-container {
   width: 24px;
   height: 24px;
-  margin-left: 20px;
+  margin-left: 24px;
 }
 // CSS.gg icons for sun and moon
 .gg-sun {
   box-sizing: border-box;
   position: relative;
   display: block;
+  color: #fdfa2d;
   transform: scale(var(--ggs, 1));
   width: 24px;
   height: 24px;
@@ -378,6 +390,7 @@ body.light {
 .gg-moon {
   overflow: hidden;
   position: relative;
+  color: #122f50;
   transform: rotate(-135deg) scale(var(--ggs, 1));
   width: 20px;
   height: 20px;
