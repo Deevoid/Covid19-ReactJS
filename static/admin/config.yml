@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Deevoid/corona
+  repo: Deevoid/Covid19-ReactJS
 
 media_folder: static/assets
 public_folder: /assets
