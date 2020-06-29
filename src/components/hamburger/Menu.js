@@ -5,12 +5,9 @@ import ListMenu from "./ListMenu";
 const variants = {
   open: {
     display: "block",
-    transition: { staggerChildren: 0.03, delayChildren: 0.1 },
   },
   closed: {
     display: "none",
-
-    transition: { staggerChildren: 0.05, staggerDirection: -1 },
   },
 };
 
