@@ -156,6 +156,31 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      a {
+        transition: 600ms;
+        color: rgb(95, 95, 95);
+        text-decoration: none;
+        margin: 1rem 12px;
+        transition: 200ms;
+        font-size: 1.2rem;
+        &[aria-current] {
+          color: var(--primary-color);
+          font-weight: 700;
+          font-size: 1.4rem;
+        }
+        &:hover {
+          color: var(--primary-color);
+          font-size: 1.4rem;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
   button {
     position: relative;
@@ -164,7 +189,6 @@ a {
     border: none;
     -webkit-user-select: none;
     -moz-user-select: none;
-    -ms-user-select: none;
     cursor: pointer;
     padding: 0;
     padding-top: 5px;
