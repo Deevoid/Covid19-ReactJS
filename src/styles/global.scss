@@ -162,13 +162,13 @@ a {
       font-weight: 600;
       a {
         transition: 600ms;
-        color: rgb(95, 95, 95);
+        color: rgb(59, 59, 59);
         text-decoration: none;
         margin: 1rem 12px;
         transition: 200ms;
         font-size: 1.2rem;
         &[aria-current] {
-          color: var(--primary-color);
+          color: var(--secondary-color);
           font-weight: 700;
           font-size: 1.4rem;
         }
@@ -196,6 +196,7 @@ a {
     height: 24px;
     border-radius: 50%;
     background: transparent;
+    -webkit-tap-highlight-color: transparent;
   }
   ul,
   li {
