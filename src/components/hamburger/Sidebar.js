@@ -1,10 +1,10 @@
-import React, { useLayoutEffect } from "react";
+import React from "react";
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./Dimension";
 import Ham from "./Ham";
 import Menu from "./Menu";
-import ScrollLock, { TouchScrollable } from "react-scrolllock";
+import ScrollLock from "react-scrolllock";
 
 const sidebar = {
   open: (height = 1000) => ({
