@@ -2,13 +2,17 @@ import React from "react";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faVirus } from "@fortawesome/free-solid-svg-icons";
+import { useMediaQuery } from "react-responsive";
 
 import Navigation from "../components/navigation";
 import ThemeChanger from "../components/themeChanger";
+import Sidebar from "./hamburger/Sidebar";
 
 // import 'prismjs/themes/prism-okaidia.css';
 
 export default ({ children }) => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   return (
     <div className="site-wrapper">
       <header className="site-header">
@@ -30,7 +34,7 @@ export default ({ children }) => {
             </Link>
           </div>
           <div className="site-nav">
-            <Navigation />
+            {!isTabletOrMobile ? <Navigation /> : <Sidebar />}
             <ThemeChanger />
           </div>
         </div>
