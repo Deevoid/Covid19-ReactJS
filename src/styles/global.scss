@@ -170,11 +170,11 @@ a {
         &[aria-current] {
           color: var(--secondary-color);
           font-weight: 700;
-          font-size: 1.4rem;
+          font-size: 1.5rem;
         }
         &:hover {
-          color: var(--primary-color);
-          font-size: 1.4rem;
+          color: var(--featured-bg);
+          font-size: 1.5rem;
         }
         &:last-child {
           margin-right: 0;
