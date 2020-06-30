@@ -11,7 +11,7 @@ const sidebar = {
     clipPath: `circle(${height * 2 + 200}px at 80vw 40px)`,
     transition: {
       type: "spring",
-      stiffness: 200,
+      stiffness: 100,
       restDelta: 2,
     },
   }),
@@ -33,7 +33,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      <ScrollLock isActive={isOpen} accountForScrollbars="false"></ScrollLock>
+      {/* <ScrollLock isActive={isOpen} accountForScrollbars="false"></ScrollLock> */}
       <motion.div
         className="sidebar-nav"
         initial={false}

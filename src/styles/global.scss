@@ -63,17 +63,6 @@ body {
   height: 100vh;
   position: relative;
 }
-body::-webkit-scrollbar {
-  width: 0.8rem;
-}
-
-body::-webkit-scrollbar-track {
-  background: #ebebeb;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #8d8d8d;
-}
 
 a {
   text-decoration: none;
@@ -90,7 +79,6 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
 }
 .site-header {
   margin: 0;
@@ -157,11 +145,11 @@ a {
 .sidebar-nav {
   padding: 0;
   .sidebar-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     bottom: 0;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(10px);
