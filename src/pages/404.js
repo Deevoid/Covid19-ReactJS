@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import Lottie from "lottie-react-web";
-import animation from "../3146-404page.json";
+import animation from "../Lottie/3146-404page.json";
 import { Link } from "gatsby";
 
 const notFound = () => {

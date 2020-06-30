@@ -7,6 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: require("./site-meta-data.json"),
+
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -55,6 +56,16 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
+
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify-cms`,
@@ -63,5 +74,8 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    "gatsby-plugin-page-load-delay",
   ],
 };

@@ -1,33 +1,16 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query HeadingQuery {
-        site {
-          siteMetadata {
-            home {
-              title
-              description
-            }
-          }
-        }
-      }
-    `}
-    render={(data) => (
-      <div className="hero-header">
-        <div className="headline">{data.site.siteMetadata.home.title}</div>
-        <div
-          className="primary-content"
-          dangerouslySetInnerHTML={{
-            __html: data.site.siteMetadata.home.description,
-          }}
-        />
 
-        <Link to="/contact" className="button -primary">
-          Get in touch &rarr;
-        </Link>
+export default function Heroheader() {
+  return (
+    <div className="container">
+      <div className="heroheader">
+        <h2>You are not alone.</h2>
+        <p>
+          Check out what people around the globe are saying about the
+          coronavirus disease.<br></br>Learn from their experiences and discover
+          tips to stay safe during this pandemic.
+        </p>
       </div>
-    )}
-  />
-);
+    </div>
+  );
+}

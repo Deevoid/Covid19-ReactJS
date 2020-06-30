@@ -8,8 +8,6 @@ import Navigation from "../components/navigation";
 import ThemeChanger from "../components/themeChanger";
 import Sidebar from "./hamburger/Sidebar";
 
-// import 'prismjs/themes/prism-okaidia.css';
-
 export default ({ children }) => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
