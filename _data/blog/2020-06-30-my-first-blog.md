@@ -6,6 +6,7 @@ title: My first blog
 metaDescription: >-
   This is about the coronavirus blog that i am creating with the help of react
   and gatsby
+thumbnail: /assets/755729.jpg
 ---
 Hello everyone 
 
