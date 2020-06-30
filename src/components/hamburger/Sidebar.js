@@ -33,7 +33,7 @@ export const Sidebar = () => {
 
   return (
     <>
-      {/* <ScrollLock isActive={isOpen} accountForScrollbars="false"></ScrollLock> */}
+      <ScrollLock isActive={isOpen}></ScrollLock>
       <motion.div
         className="sidebar-nav"
         initial={false}

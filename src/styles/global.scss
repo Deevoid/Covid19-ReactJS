@@ -12,7 +12,7 @@ body {
   margin-top: 0;
 }
 body.light {
-  transition: 100ms;
+  transition: 400ms;
   --primary-color: #6f00ff;
   --primary-text-color: #fff;
   --featured-bg: #493b8a;
@@ -33,7 +33,7 @@ body.light {
   --input-bg: var(--background);
 }
 body.dark {
-  transition: 100ms;
+  transition: 400ms;
   --primary-color: #9984d5;
   --primary-text-color: #fff;
   --featured-bg: #66578d;
@@ -79,7 +79,9 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
+
 .site-header {
   margin: 0;
   padding: 0;
@@ -136,6 +138,7 @@ a {
       }
     }
     label {
+      z-index: 9;
       padding-top: 2px;
       cursor: pointer;
     }
@@ -145,18 +148,20 @@ a {
 .sidebar-nav {
   padding: 0;
   .sidebar-bg {
+    z-index: 9;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 50vw;
+    width: 300px;
     height: 100vh;
     background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(12px);
     display: flex;
     align-items: center;
     justify-content: center;
     .navigation {
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
       font-weight: 600;
@@ -174,7 +179,7 @@ a {
         }
         &:hover {
           color: var(--featured-bg);
-          font-size: 1.5rem;
+          transform: scale(1.2);
         }
         &:last-child {
           margin-right: 0;
