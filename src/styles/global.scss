@@ -236,6 +236,7 @@ a {
       font-size: 1.1rem;
       font-weight: 600;
       padding-top: 5px;
+      color: #000;
     }
     height: 60px;
     width: 140px;
@@ -243,7 +244,7 @@ a {
     border-radius: 10px;
   }
   .confirmed {
-    background: rgba(255, 0, 0, 0.14);
+    background: #ffc6c6;
     h4 {
       margin: 0;
       opacity: 0.6;
@@ -251,7 +252,7 @@ a {
     }
   }
   .active {
-    background: rgba(0, 26, 255, 0.14);
+    background: #c6b2ff;
     h4 {
       margin: 0;
       opacity: 0.6;
@@ -259,7 +260,7 @@ a {
     }
   }
   .recovered {
-    background: rgba(5, 255, 0, 0.24);
+    background: #bdffc4;
     h4 {
       margin: 0;
       opacity: 0.6;
@@ -267,7 +268,7 @@ a {
     }
   }
   .deaths {
-    background: rgba(196, 196, 196, 0.3);
+    background: #e9e9e9;
     h4 {
       margin: 0;
       opacity: 0.6;
@@ -293,6 +294,50 @@ a {
     -webkit-user-select: none;
     -moz-user-select: none;
     outline: none;
+  }
+}
+.section-safe {
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+  gap: 10px 10px;
+  justify-content: center;
+  .p-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.section-respect {
+  h3 {
+    text-align: center;
+    span {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 8px;
+        width: 70px;
+        background: linear-gradient(to right, #ff512f, #dd2476);
+        z-index: -1;
+      }
+    }
+  }
+  .respect-grid {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+    gap: 10px 10px;
+    justify-content: center;
+    .text-p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 // Index Page
@@ -573,6 +618,13 @@ body.light {
   .container {
     width: 90%;
     margin: 0 auto;
+  }
+  .caseCount {
+    margin: 2rem 0 0;
+    gap: 10px 20px;
+    .case-card {
+      height: 60px;
+    }
   }
 }
 @media only screen and (min-width: 768px) {

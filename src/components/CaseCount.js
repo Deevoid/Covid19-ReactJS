@@ -7,8 +7,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRedo } from "@fortawesome/free-solid-svg-icons";
 import ReactTooltip from "react-tooltip";
 import NumberFormat from "react-number-format";
+import { useMediaQuery } from "react-responsive";
 
 export default function Casecount() {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
+
   const [refresh, setRefresh] = useState();
 
   useEffect(() => {
@@ -129,7 +132,8 @@ export default function Casecount() {
           data-effect="solid"
           onClick={() => setRefresh(null)}
         >
-          <ReactTooltip />
+          {!isTabletOrMobile && <ReactTooltip />}
+
           <FontAwesomeIcon icon={faRedo} fixedWidth />
         </button>
       </div>
