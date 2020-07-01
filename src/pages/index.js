@@ -67,7 +67,7 @@ const IndexPage = () => {
             </div>
             <div className="lottie">
               <Lottie
-                width={380}
+                width={350}
                 options={{
                   animationData: animation2,
                 }}
