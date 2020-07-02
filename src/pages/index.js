@@ -7,10 +7,12 @@ import "react-toastify/dist/ReactToastify.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
+import Helpline from "../components/Helpline";
+
 import Lottie from "lottie-react-web";
 import animation1 from "../Lottie/18795-coronavirus.json";
 import animation2 from "../Lottie/14916-prueba-doctores-freepik.json";
-import animation3 from "../Lottie/24275-i-was-scared-after-that-brouhaha.json";
+import animation3 from "../Lottie/17686-wash-your-hands-regularly.json";
 import animation4 from "../Lottie/20546-i-stay-at-home.json";
 import animation5 from "../Lottie/17898-sneezing.json";
 import animation6 from "../Lottie/18795-coronavirus.json";
@@ -39,8 +41,10 @@ const IndexPage = () => {
       <div className="container">
         <div className="section-safe">
           <div className="p-text">
-            <h1 style={{ color: "#6f00ff" }}>This too shall pass</h1>
-            <p style={{ opacity: 0.7 }}>
+            <h1 style={{ color: "#6f00ff", margin: 0 }}>
+              This too shall pass.
+            </h1>
+            <p style={{ opacity: 0.7, margin: 0 }}>
               Coronavirus disease (COVID-19) is an infectious disease caused by
               a newly discovered coronavirus.
             </p>
@@ -67,7 +71,7 @@ const IndexPage = () => {
               <ul>
                 <li>Care for elders and respect Covid -19 warriors.</li>
                 <li>Do not discriminate with covid-19 patients.</li>
-                <li>Together we can fight the disease and live free.</li>
+                <li>Stay safe and keep others safe.</li>
               </ul>
             </div>
             <div className="lottie">
@@ -156,6 +160,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+        <Helpline />
       </div>
     </Layout>
   );

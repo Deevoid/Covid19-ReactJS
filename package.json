@@ -29,6 +29,7 @@
     "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-plugin-sitemap": "^2.4.0",
+    "gatsby-plugin-smoothscroll": "^1.1.0",
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",

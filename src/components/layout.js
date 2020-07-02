@@ -39,7 +39,8 @@ export default ({ children }) => {
       </header>
       {children}
       <footer className="site-footer">
-        <p>
+        <p>We stand with everyone working on the frontline.</p>
+        <p className="copyright">
           &copy; {new Date().getFullYear()} &bull; Crafted with{" "}
           <span role="img" aria-label="love">
             ❤️
