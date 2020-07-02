@@ -517,7 +517,10 @@ a {
 }
 .section-helpline {
   margin: 3rem 0;
-  padding: 2rem 0 0 0;
+  padding: 2rem 0.8rem 0;
+  box-shadow: 0 5px 15px rgba(32, 41, 83, 0.15),
+    0 15px 40px rgba(45, 83, 254, 0.2);
+  border-radius: 10px;
   h2 {
     margin: 0;
     span {
