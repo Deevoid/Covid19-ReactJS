@@ -72,6 +72,7 @@ module.exports = {
     "gatsby-plugin-dark-mode",
     // siteURL is a must for sitemap generation
     `gatsby-plugin-sitemap`,
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-fontawesome-css`,
