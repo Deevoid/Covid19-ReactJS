@@ -1,5 +1,5 @@
 /**
- * Configure your Gatsby site with this file.
+ * Configure your Gatsby site with this file.git
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
@@ -47,11 +47,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Delog GatbsyJS Starter`,
-        short_name: `Delog`,
+        name: `Stop Covid19`,
+        short_name: `Covid19`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#381696`,
+        theme_color: `#6f00ff`,
         display: `standalone`,
         icon: "src/images/icon.png",
       },
