@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Helmet from "react-helmet";
+
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import CaseCount from "../components/CaseCount";
@@ -15,8 +17,6 @@ import animation2 from "../Lottie/14916-prueba-doctores-freepik.json";
 import animation3 from "../Lottie/17686-wash-your-hands-regularly.json";
 import animation4 from "../Lottie/20546-i-stay-at-home.json";
 import animation5 from "../Lottie/17898-sneezing.json";
-import animation6 from "../Lottie/18795-coronavirus.json";
-import animation7 from "../Lottie/18795-coronavirus.json";
 
 const IndexPage = () => {
   useEffect(() => {
@@ -26,6 +26,13 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Stop Covid19 | Everything you need to know about Covid19</title>
+        <meta
+          name="description"
+          content="Everything you need to know about coronavirus and Covid19 disease and how to stay safe from Covid19"
+        />
+      </Helmet>
       <ToastContainer
         position="bottom-right"
         autoClose={5000}
@@ -42,7 +49,7 @@ const IndexPage = () => {
         <div className="section-safe">
           <div className="p-text">
             <h1 style={{ color: "#6f00ff", margin: 0 }}>
-              This too shall pass.
+              Stay home, Stay safe.
             </h1>
             <p style={{ opacity: 0.7, margin: 0 }}>
               Coronavirus disease (COVID-19) is an infectious disease caused by

@@ -18,8 +18,11 @@ const BlogPage = ({
   return (
     <Layout>
       <Helmet>
-        <title>{site.siteMetadata.title}</title>
-        <meta name="description" content={site.siteMetadata.description} />
+        <title>Blog | {site.siteMetadata.title}</title>
+        <meta
+          name="description"
+          content="Check out the latest buzz on the coronavirus disease. Bust the myths and know how to stay safe during this pandemic.Protect Yourself from Covid19 "
+        />
       </Helmet>
       <HeroHeader />
       <h4
