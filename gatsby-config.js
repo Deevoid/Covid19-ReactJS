@@ -78,6 +78,5 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    "gatsby-plugin-page-load-delay",
   ],
 };

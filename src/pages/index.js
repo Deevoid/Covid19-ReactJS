@@ -51,11 +51,7 @@ const IndexPage = () => {
             <h1 style={{ color: "#6f00ff", margin: 0 }}>
               Stay home, Stay safe.
             </h1>
-            <p style={{ opacity: 0.7, margin: 0 }}>
-              Coronavirus disease (COVID-19) is an infectious disease caused by
-              a newly discovered coronavirus.
-            </p>
-            <p>
+            <p style={{ margin: 0, fontWeight: 500 }}>
               We have gathered everything you need to know about Covid-19.Follow
               the guidelines and stay safe.
             </p>

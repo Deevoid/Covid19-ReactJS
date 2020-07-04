@@ -720,6 +720,7 @@ a {
   margin-top: 5rem;
 }
 .post {
+  overflow-x: hidden;
   padding: 0;
   background: var(--background);
   color: var(--text-color);
@@ -729,6 +730,36 @@ a {
     margin: 0 auto;
     p {
       text-align: justify;
+    }
+    line-height: 1.6;
+    blockquote {
+      background: #d1d1d11e;
+      border-left: 5px solid #6f00ff;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+      font-family: Arial;
+      color: #ccc;
+      content: "\201C";
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote p {
+      display: inline;
+    }
+    img {
+      margin: 0 auto;
+      border-radius: 3px;
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
     }
   }
   > .blog-post-content *:last-child,

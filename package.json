@@ -25,7 +25,6 @@
     "gatsby-plugin-netlify-cms": "^4.1.38",
     "gatsby-plugin-nprogress": "^2.3.6",
     "gatsby-plugin-offline": "^3.2.0",
-    "gatsby-plugin-page-load-delay": "^0.1.2",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sharp": "^2.6.14",

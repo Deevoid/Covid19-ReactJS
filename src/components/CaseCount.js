@@ -13,6 +13,7 @@ export default function Casecount() {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 768px)" });
 
   const [refresh, setRefresh] = useState();
+  const [flag, setFlag] = useState(true);
 
   useEffect(() => {
     async function fetchCases() {
@@ -34,8 +35,11 @@ export default function Casecount() {
       });
       setRefresh(covid.data.data.state);
     }
-    fetchCases();
-  }, [refresh]);
+    if (flag) {
+      fetchCases();
+      setFlag(false);
+    }
+  }, [flag]);
 
   return (
     <div className="container">
@@ -130,7 +134,10 @@ export default function Casecount() {
           data-tip="Refresh"
           data-place="bottom"
           data-effect="solid"
-          onClick={() => setRefresh(null)}
+          onClick={() => {
+            setRefresh(null);
+            setFlag(true);
+          }}
         >
           {!isTabletOrMobile && <ReactTooltip />}
 
