@@ -31,7 +31,7 @@ export default function Template({
                 className="post-thumbnail"
                 style={{ backgroundImage: `url(${frontmatter.thumbnail})` }}
               >
-                <h1 className="post-title">{frontmatter.title}</h1>
+                <h3 className="post-title">{frontmatter.title}</h3>
                 <div className="post-meta">{frontmatter.date}</div>
               </div>
             )}

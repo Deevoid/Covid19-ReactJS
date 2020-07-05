@@ -46,6 +46,7 @@
     "react-moment": "^0.9.7",
     "react-number-format": "^4.4.1",
     "react-responsive": "^8.1.0",
+    "react-router-scroll-top": "^0.2.1",
     "react-scrolllock": "^5.0.1",
     "react-toastify": "^6.0.6",
     "react-tooltip": "^4.2.7"
