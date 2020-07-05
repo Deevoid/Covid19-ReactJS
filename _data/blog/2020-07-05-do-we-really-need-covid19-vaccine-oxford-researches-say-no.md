@@ -1,6 +1,6 @@
 ---
 template: BlogPost
-path: /do-we-really-need-COvid19-vaccine
+path: /do-we-really-need-Covid19-vaccine
 date: 2020-07-05T10:57:03.696Z
 title: Do we really need Covid19 vaccine? Oxford researches say NO!
 metaDescription: >-
