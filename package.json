@@ -38,7 +38,7 @@
     "lottie-react-web": "^2.2.2",
     "moment": "^2.27.0",
     "netlify-cms-app": "^2.11.13",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
