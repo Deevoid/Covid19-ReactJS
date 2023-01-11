@@ -33,7 +33,7 @@
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^3.3.31",
     "gatsby-source-filesystem": "^2.1.48",
-    "gatsby-transformer-remark": "^2.6.53",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.7",
     "lottie-react-web": "^2.2.2",
     "moment": "^2.27.0",
